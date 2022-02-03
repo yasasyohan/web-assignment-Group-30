@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+{
+ margin: 0;
+padding: 0;
+font-family: "poppins" , sans-serif;	
+}
+
+ul
+{
+	
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+ul li
+{
+	list-style: none;
+    margin-bottom: 1em; 
+}
+ul li a
+{
+	
+	position: relative;
+	padding: 6px 15px;
+	text-decoration: none;
+	background: #2196f3;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	overflow: hidden;
+	transition: 0.5s;
+	z-index: 1;
+	
+}
+ul:hover li a
+{
+	
+	opacity: 0;
+}
+ul li a:hover
+{
+	
+	transform: scale(1.4);
+	z-index: 1000;
+	background: :#ff3f81;
+	opacity: 1;
+}
+ul li a:before
+{
+	
+	content: '';
+	position: absolute;
+	top:0;
+	left: 0;
+}
