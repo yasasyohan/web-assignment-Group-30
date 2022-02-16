@@ -1,0 +1,31 @@
+img {
+    width: 30%;
+    padding-left: 35%;
+    opacity: 50%;
+  }
+
+  body {
+    background-image:linear-gradient(rgba(66, 70, 85, 0.7),rgba(193, 203, 236, 0.7)),url('654501.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .switch {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .switch input{
+    appearance: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background: #1e1e1e;
+    outline: none;
+    cursor: pointer;
+  }
+
+  
