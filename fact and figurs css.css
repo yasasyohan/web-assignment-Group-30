@@ -28,4 +28,36 @@ img {
     cursor: pointer;
   }
 
-  
+  .switch input::before,
+  .switch input::after{
+    z-index: 2;
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+    font-weight: bolder;
+  }
+
+  .switch input::before{
+    padding-bottom: 45px;
+    content: "Good Health";
+    left:20px;
+    
+  }
+
+  .switch input::after{
+    content: "Well Being";
+    right:20px;
+    padding-bottom: 45px;
+  }
+
+  .switch input:checked{
+    background: #ff9800;
+  }
+
+  .switch label{
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    bottom: 4px;
+    border-radius: 20px;
+  }
