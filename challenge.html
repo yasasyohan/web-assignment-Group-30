@@ -98,6 +98,14 @@ body {font-family: "Lato", sans-serif;
 .column img:hover {
   opacity: 1;
 }
+#nextPRO {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #87CEEB;
+  margin-top: 20px;
+  color: #696969;
+}
 
 </style>
 </head>
@@ -203,6 +211,12 @@ The psychiatric hospital, whose works have stalled, is being constructed under N
 Herbs have many values but a few of the most common uses include aromatherapy, medicinal, as seasonings and flavorings in foods and beverages, and in salads. Many herbs are chockfull of cancer-fighting antioxidants, valuable nutrients, fat-free flavor, and more.<br>
 <br>Valuable herbs play a vital role in our earth.We also contributed to do a valuable service to the country by planting a few herbs at home that will benefit everyone.</p>
 </div>
+    <p><h3>Click the "Next Projects" button :</h3></p>
+       <button onclick="myFunction()"><mark>Next Project</mark></button>
+
+     <div id="nextPRO">
+   <h2> This is Our Next Project </h2>
+      </div>
 
 <script>
 function myFunction() {
@@ -235,13 +249,15 @@ function openPro(evt, proName) {
   evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
-
+function myFunction() {
+  var x = document.getElementById("nextPRO");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 </script>
-
-
-
-
-
 
 </body>
 </html>
