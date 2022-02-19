@@ -47,6 +47,50 @@ body {
   background-color:#E6E6FA;
 }
 
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;
+       background-color:WHITE;
+      }
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+.tab button {
+  display: block;
+  background-color: inherit;
+  color:black ;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: Arial Black;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+  color: black;
+}
+.tabcontent h3 {
+  color: #191970;
+}
+
 
 </style>
 </head>
@@ -121,6 +165,38 @@ The psychiatric hospital, whose works have stalled, is being constructed under N
 <hr>
   </div>
 </div>
+ <br>
+<h2><i>Our Previous Project</i></h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openPro(event, 'Project 1')" id="defaultOpen">Project 1</button>
+  <button class="tablinks" onclick="openPro(event, 'Project 2')">Project 2</button>
+  <button class="tablinks" onclick="openPro(event, 'Project 3')">Project 3</button>
+</div>
+<div id="Project 1" class="tabcontent">
+  <h3>Let's keep the environment clean,Let's get tid of DENGUE</h3>
+  <p>Dengue is a viral infection transmitted to humans through the bite of infected mosquitoes. The primary vectors that transmit the disease are Aedes aegypti mosquitoes and, to a lesser extent, Ae. albopictus.Severe dengue is a leading cause of serious illness and death in some Asian and Latin American countries. It requires management by medical professionals.<br><br>But it is our duty to help prevent dengue as much as we can.So,we also had the opportunity to assist in curbing the spread of the dengue manace throughout the country by providing our support for a dengue labor donation.<br>
+ <br>Keeping the environment around us clean will enable us and the country to escape from many catastrophic situations and live safely.Being clean is one of the most important requirements of our health.</p>
+</div>
+<div id="Project 2" class="tabcontent">
+  <h3>Clean Water</h3>
+  <p> For innocent Sri Lankan’s  who are susceptible to fatal kidney disease , this is an effort to provide them with clean drinking water.  To clean and clear water of heavy metal contaminants. This is the main goal of our project.<br>
+ North central province is vital in the production of rice in the country. Most people living in this area are innocent farmers who depending on farming to sustain their daily lives. These days the water in this area contains a murky taste. This is mainly due to the high content of chemicals present in the water base.  Tests have shown up that the main cause of such chemicals in the water base originated from pesticides and fertilizer used for farming. Toxins such as  Arsenic, Cadmium and Mercury are mixed with drinking water thus leading to deadly illnesses.
+ The residet living in this are not only use this water for drinking  but also use the same contaminated water for cooking purposes as well. Due to this a large portion of innocent people in the north central province have been susceptible to fatal kidney illnesses. To explain further the epidemic caused by unclean water, in areas such as Padavi Parakramapura research has found that 20% of the residence suffer from kidney illnesses.<br>
+ We selected a house and donated a filter to help people in these affected areas.We were all happy to be able to help them either way.
+</p> 
+</div>
+
+<div id="Project 3" class="tabcontent">
+  <h3>Planting of herbs</h3>
+  <p>Planting an herb garden is a wonderful way to enjoy the sights, smells and tastes of a wide variety of plants. Fresh herbs are often easy to cultivate and can grow in a small garden in the back yard, in pots on an outdoor patio or sunroom, or even in a window box inside a kitchen. Gardening is a terrific hobby. It is a great activity that can be shared with others  or even alone. Not only is gardening relaxing but it also improves hand-eye coordination, motor skills and self-esteem.
+
+
+Herbs have many values but a few of the most common uses include aromatherapy, medicinal, as seasonings and flavorings in foods and beverages, and in salads. Many herbs are chockfull of cancer-fighting antioxidants, valuable nutrients, fat-free flavor, and more.<br>
+<br>Valuable herbs play a vital role in our earth.We also contributed to do a valuable service to the country by planting a few herbs at home that will benefit everyone.</p>
+</div>
+
 <script>
 function myFunction() {
   var dots = document.getElementById("dots");
@@ -137,6 +213,22 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+
+function openPro(evt, proName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(proName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+
 </script>
 
 
