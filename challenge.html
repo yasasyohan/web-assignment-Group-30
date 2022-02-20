@@ -19,7 +19,9 @@ body {
   text-align: center;
   background: #008B8B;
   color: white;
+  
 }
+
 .header h1 {
   font-size: 40px;
 }
@@ -155,20 +157,21 @@ body {font-family: "Lato", sans-serif;
 
  <div class="main">
     <h2>WORLD WIDE PROJECTS</h2>
-   <h5> definition </h5>
+  <h3> IAEA charts Amazon waters, boosting access to life-saving cancer screening <br>
+       10 February 2022<br>
+         Americas </h3>
      <div class="column">
         <center><img src="C:\Users\Dakshima\Desktop\ship.jpg" style="height:300px;"></center>
   </div>
-    <h3> IAEA charts Amazon waters, boosting access to life-saving cancer screening <br>
-       10 February 2022<br>
-         Americas </h3>
+    
     <p>Women living in Amazon River communities now have increased access to breast cancer screening along even its most remote banks, thanks to two new mammography units installed on Brazilian navy ships. </p><hr>
     <br>
     <br>
+ <h3>Ndola Mental Hospital in Zambia</h3>
     <div class="column">
      <center><img src="C:\Users\Dakshima\Desktop\ndolahospital.jpg" style="height:300px;width:600px;"></center>
     </div>
-      <h3>Ndola Medntal Hospital in Zambia</h3>
+      
     <p> According to the 2021 Mental Health Statistics, mental health and substance use disorders affected 13 per cent of the world's population.
 That number could increase as people around the world face various challenges and try to adjust to a new normal amid the coronavirus pandemic.
 <br><br>For several years,<span id="dots">...</span><span id="more"> Chainama Hills Hospital in Lusaka has been offering mental health services to an ever growing population in the country.
@@ -178,15 +181,26 @@ But for close to eight years now since construction works at the Ndola's Psychia
 The psychiatric hospital, whose works have stalled, is being constructed under Ndola Teaching Hospital (NTH).</span> </p>
 <button onclick="myFunction()" id="myBtn">Read more</button>
 <hr>
+<h3> Age International's pop-up clinics</h3>
   <div class="column">
      <center><img src="C:\Users\Dakshima\Desktop\clinic.jpg" style="height:300px;width:600px;"></center>
     </div>
-  <h3> Age International's pop-up clinics</h3>
+  
   <p>Myanmar only has six doctors for every 10,000 people, compared to the UK’s 28. For those that live in urban areas, a visit to the doctor can be difficult to afford. If you are poor, older, and living in a rural area, it can be impossible. 
 
 “It’s hard to get to a doctor here; money is a real obstacle," Dr May (photographed) explains. "Older people need care left, right and centre but, when they don’t have help from their families, they suffer.” 
 
 Age International’s pop-up clinics in Myanmar are bringing healthcare to the older people who need it most. Dr May travels to some of the most rural locations in the country, providing free check-ups, advice and medication. For the older people who visit her, the clinic is a lifeline.
+</p>
+<hr>
+  <h3> THET's projects to improve mental health in Zambia</h3>
+ <div class= "column">
+   <center><img src="C:\Users\Dakshima\Desktop\zambia.jpg" style="height:300px;width:600px;"></center>
+    </div>
+ 
+ <p>Depression is the most commonly diagnosed mental illness in Zambia and the stigma and limited public knowledge means traditional medicine and spiritual management are the most common forms of treatment. 
+
+The Mental Health Literacy and Improved Patients Safety Empowering Communities Project partnership is empowering communities and patients to take action for better and safer mental health by improving levels of safety and knowledge in health institutions and by providing mental health educational materials to communities deprived of contemporary communication channels. 
 </p>
 <hr>
   </div>
@@ -227,7 +241,7 @@ Herbs have many values but a few of the most common uses include aromatherapy, m
 
   <h2><i>Our Next Project</i></h2>
     <p>Click the "Next Projects" button :</p>
-       <button onclick="myFunction()"><mark>Next Project</mark></button>
+       <button onclick="newFunction()"><mark>Next Project</mark></button>
 
      <div id="nextPRO">
    <h2> This is Our Next Project </h2>
@@ -264,7 +278,8 @@ function openPro(evt, proName) {
   evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
-function myrFunction() {
+
+function newFunction() {
   var x = document.getElementById("nextPRO");
   if (x.style.display === "none") {
     x.style.display = "block";
