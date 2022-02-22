@@ -121,3 +121,50 @@ function queCounter(index){
     let totalQuesCountTag = '<span><p>'+ index +'</p>of<p>'+ questions.length +'</p>Questions</span>';
     bottom_ques_counter.innerHTML = totalQuesCountTag;
 }
+
+function showResultBox(){
+    info_box.classList.remove("activeInfo");
+    quiz_box.classList.remove("activeQuiz"); 
+    result_box.classList.add("activeResult");
+    const scoreText = result_box.querySelector(".score_text");
+    if(userScore > 3){
+        let scoreTag = '<span> You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else if(userScore > 1){
+        let scoreTag = '<span>and nice, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+    else{
+        let scoreTag = '<span>and sorry, You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+}
+
+
+function startTimer(time){
+    counter = setInterval(timer, 1000);
+    function timer(){
+        timeCount.textContent = time;
+        time--;
+        if (time < 9){
+            let addZero = timeCount.textContent;
+            timeCount.textContent = "0" + addZero;
+        }
+        if(time < 0){
+            clearInterval(counter);
+            timeCount.textContent = "00";
+        }
+    }
+}
+
+function startTimerLine(time){
+    counterLine = setInterval(timer, 29);
+    function timer(){
+        time += 1;
+        timeLine.style.width = time + "px";
+        if (time > 549){
+            clearInterval(counterLine);
+        }
+    }
+}
