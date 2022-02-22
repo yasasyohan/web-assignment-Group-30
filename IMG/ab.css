@@ -80,7 +80,7 @@ nav ul li:hover::after
 {
 	list-style: disc;
 	color: black;
-	font-size: 25px;
+	font-size: 23px;
 	font-family: 'Albertus Extra Bold';
 	padding-left: 70px;
 }
@@ -114,6 +114,10 @@ ul
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+.row1 h4{
+   font-size: 15px;    
+   font-family: 'Calibri(Body)';
 }
 
 .side {
@@ -151,7 +155,7 @@ body
 .about h2 
 {
      color: black;
-     font-family:'sans-serif';     
+     font-family:'Bookman Old Style';     
      font-size: 30px;  
 
 }
@@ -265,3 +269,26 @@ body
 .column7 img:hover {
   opacity: 1;
 }
+.btn {
+  border: none;
+  background-color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.click {
+  color: blue;
+  font-size: 20px;
+}
+
+.click:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+
