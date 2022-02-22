@@ -66,3 +66,44 @@ nav ul li:hover::after
 }
 
 
+.heading h1
+{
+	color:#FFFFFF;
+	font-size: 70px;
+	font-family: 'BinnerD';
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #00FFFF;
+	padding-left: 30px;
+}
+
+.heading ul
+{
+	list-style: disc;
+	color: black;
+	font-size: 25px;
+	font-family: 'Albertus Extra Bold';
+	padding-left: 70px;
+}
+.row
+{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+
+.col{
+	flex-basis: 80%;
+	padding-left: 800px;
+
+	
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+}
