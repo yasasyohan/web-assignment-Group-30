@@ -201,3 +201,67 @@ body
 .tabcontent h3 {
   color: #191970;
 }
+.column img {
+  opacity: 0.8; 
+  cursor: pointer;
+   
+}
+.column img:hover {
+  opacity: 1;
+}
+.column1 img {
+  opacity: 0.8; 
+  cursor: pointer;
+   
+}
+.column1 img:hover {
+  opacity: 1;
+}
+.column2 img {
+  opacity: 0.8; 
+  cursor: pointer;
+   
+}
+.column2 img:hover {
+  opacity: 1;
+}
+.column3 img {
+  opacity: 0.8; 
+  cursor: pointer;
+   
+}
+.column3 img:hover {
+  opacity: 1;
+}
+.column4 img {
+  opacity: 0.8; 
+  cursor: pointer;
+   
+}
+.column4 img:hover {
+  opacity: 1;
+}
+.column5 img {
+  opacity: 0.8; 
+  cursor: pointer;
+   
+}
+.column5 img:hover {
+  opacity: 1;
+}
+.column6 img {
+  opacity: 0.8; 
+  cursor: pointer;
+   
+}
+.column6 img:hover {
+  opacity: 1;
+}
+.column7 img {
+  opacity: 0.8; 
+  cursor: pointer;
+   
+}
+.column7 img:hover {
+  opacity: 1;
+}
