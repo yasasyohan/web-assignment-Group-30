@@ -59,7 +59,7 @@ nav ul li:hover::after{
 }
 
 .box{
-    background-image: url("Images/1.jpg");
+    
     width: 100%;
     height: 450px;
     font-family: Arial;
@@ -208,6 +208,7 @@ img{
 
   .test1{
       float:right;
+      border-radius: 20px;
   }
 
 
@@ -215,4 +216,6 @@ img{
 
 body{
     background-image: linear-gradient(rgb(117, 110, 110), rgb(255, 255, 255));
+    background-image: url("Images/1.jpg");
+    background-repeat: no-repeat;
 }
