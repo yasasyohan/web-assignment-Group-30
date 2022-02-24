@@ -220,20 +220,20 @@ img{
 
 body{
     background-image: linear-gradient(rgb(117, 110, 110), rgb(255, 255, 255));
-    background-image: url( "../images/1.jpg");
+    background-image: url( "images/1.jpg");
     background-repeat: no-repeat;
 
     
 }
 
 .bg1{
-    background-image:url("../images/types-of-mental-illness--1024x683.jpeg");
+    background-image:url("/images/types-of-mental-illness--1024x683.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bodyclass{
-    background-image: url( "../images/3.jpg");
+    background-image: url( "/images/3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -241,13 +241,13 @@ body{
 }
 
 .boxcontainer{
-    background-image: url( "../images/white.png");
+    background-image: url( "/images/white.png");
     background-repeat: no-repeat;
     
 }
 
 .body2{
-    background-image: url( "../images/world-mental-health-day.jpg");
+    background-image: url( "/images/world-mental-health-day.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
