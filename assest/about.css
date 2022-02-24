@@ -1,0 +1,255 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Exo;
+}
+
+@font-face {
+  font-family: Exo;
+  src: url(./fonts/Exo2.0-Medium.otf);
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,99,0,0.9),rgba(0,0,0,0.1));
+	background-position: center;
+	background-size: cover;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
+	
+}
+
+.navbar{
+	height: 12%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 60px;
+	position: relative;
+}
+
+nav ul li a{
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	
+}
+
+nav ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #FFE500;
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	transition: 0.5s;
+}
+
+nav ul li:hover::after{
+	width: 100%;
+}
+
+h1{
+	color:#000000;
+	font-size: 100px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-align: center;
+	padding: 5px;	
+}
+
+.para{
+	font-size: 20px;
+	font-family: 'Rockwell';
+	text-align: center;
+	padding: 50px;
+}
+
+.main{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.profile-card{
+  position: relative;
+  width: 240px;
+  height: 240px;
+  background:#256064;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #1336 ;
+  transition: .6s;
+  margin: 0 10px;
+}
+.profile-card:hover{
+  border-radius: 10px;
+  height: 260px;
+}
+.profile-card .img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: .6s;
+  z-index: 99;
+}
+.profile-card:hover .img{
+  transform: translateY(-60px);
+}
+.img img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: -10px;
+  margin-left: -9.25px;
+  box-shadow: 0 0 2px #1336;
+  transition: .6s;
+}
+.profile-card:hover img{
+  border-radius: 10px;
+}
+
+.caption{
+  text-align: center;
+  transform: translateY(-80px);
+  opacity: 0;
+  transition: .6s;
+}
+.profile-card:hover .caption{
+  opacity: 1;
+}
+.caption h3{
+	padding-top: 20px;
+  font-size: 15px;
+	color: black;
+}
+
+.caption p{
+  font-size: 15px;
+  color: #2B0909;
+  margin: 2px 0 9px 0;
+}
+.caption .social-links a{
+  color: #333;
+  margin-right: 10px;
+  font-size: 40px;
+  transition: .6s;
+}
+.social-links a:hover{
+  padding-bottom: 15px;	
+  color: #5A77E0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+footer{
+  position:absolute;
+  background: #140B5C;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: -67.89px;
+}
+
+footer .content{
+  max-width: 1250px;
+  margin:auto;
+  padding: 30px 40px 40px 40px;
+}
+
+
+footer .content .link-boxes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .link-boxes .box{
+  width: calc(100% / 5 - 10px);
+}
+.content .link-boxes .box .link_name{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+  font-family: sans-serif;	
+}
+.link-boxes .box .link_name::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+  font-family: sans-serif;	
+}
+.content .link-boxes .box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+  font-family: sans-serif;	  
+}
+.content .link-boxes .box li a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box{
+  margin-right: 55px;
+}
+
+.link-boxes .input-box input::placeholder
+{
+  color: #AFAFB6;
+  font-size: 16px;
+}
+
+footer .bottom-details{
+  width: 100%;
+  background: #0F0844;
+}
+footer .bottom-details .bottom_text
+{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a
+{
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
